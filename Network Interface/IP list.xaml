@@ -1,0 +1,11 @@
+﻿<Window x:Class="Network_Interface.IP_list"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Availability" Height="300" Width="300">
+    <DataGrid x:Name="IP_availability" HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292">
+        <DataGrid.Columns>
+            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="id"/>
+        </DataGrid.Columns>
+    </DataGrid>
+
+</Window>
