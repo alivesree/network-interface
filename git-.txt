@@ -1,0 +1,5 @@
+    press "i"
+    write your merge message.
+    press "esc"
+    write ":wq"
+    then press enter.
