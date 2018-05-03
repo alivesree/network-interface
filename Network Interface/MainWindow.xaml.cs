@@ -129,17 +129,13 @@ namespace Network_Interface
                 string ip = "192.168.1." + i;
                 try
                 {
-                    Task t = Task.Run(() =>
+                    Task.Run(() =>
                     {
-                        Thread.CurrentThread.IsBackground = true;
                         Ping ping = new Ping();
                         PingReply pingresult = ping.Send(ip);
-                        this.Dispatcher.Invoke(() =>
+                        Dispatcher.Invoke(() =>
                         {
                             ips.Items.Add(ip + " " + pingresult.Status.ToString());
-
-                            //if(pingresult.Status.ToString()=="success")
-
                         });
                     });
                 }
